@@ -1,4 +1,7 @@
 # Steps for building Pravega Zookeeper on s390x
+
+#### Note: The below steps have been validated on RHEL 8.
+   
 1. Install required Pre-reqs
     1. Go 1.17+ 
     2. Docker 
