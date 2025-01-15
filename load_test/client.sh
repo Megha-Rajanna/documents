@@ -50,7 +50,7 @@ do
     echo "Traces enabled -> ${TRACES}"
 
     # Start the actual test
-    ./start_test.sh -a agent.instana.apps.${CLUSTER} -k "${AGENT_KEY}" -f "${TEST_NAME}_load" -e off -m ${METRICS} -s ${TRACES} -t "${DURATION_MINS}" -r 10 -o "${HOSTS}" -n "${SPANS}" -c 11
+    ./start_test.sh -a ingress.instana.apps.${CLUSTER} -k "${AGENT_KEY}" -f "${TEST_NAME}_load" -e off -m ${METRICS} -s ${TRACES} -t "${DURATION_MINS}" -r 10 -o "${HOSTS}" -n "${SPANS}" -c 11
 
     echo "Sleeping for ${COOL_OFF_INTERVAL} seconds before next run..."
     sleep ${COOL_OFF_INTERVAL}
